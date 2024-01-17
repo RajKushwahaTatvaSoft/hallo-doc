@@ -1,0 +1,30 @@
+.no-border {
+    border: 0;
+    box-shadow: none;
+}
+
+input:focus{
+    box-shadow: none;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+.background { 
+    position: static; 
+    height: 100vh; 
+    width: 100vw; 
+    background-image: url('assets/11116016_415.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    filter: blur(5px);
+    opacity: 0.4; 
+    z-index: -1; 
+} 
+
+footer {
+    position: fixed;
+    bottom: 50px;
+}
