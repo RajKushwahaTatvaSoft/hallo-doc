@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/patient.css">
+    <!-- <script src="/js/patient.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Your Page</title>
+</head>
+
+<body>
+
+    <!-- Your page content goes here -->
+
+    <!-- Alert Box -->
+    <div class="modal fade" id="reloadAlert" tabindex="-1" role="dialog" aria-labelledby="reloadAlertLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body flex-column d-flex justify-content-center align-items-center mx-3 my-5">
+
+                    <div class="info-icon-shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 0 24 24" width="100px"
+                            fill="#faaa04">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                        </svg>
+                    </div>
+
+                    <h3 class="my-2">Information</h3>
+
+                    <div>
+                        <p class="text-center">When submitting a request, you must provide the correct contact
+                            information for the patient
+                            or the responsibly party. Failure to provice the correct email and phone number will delay
+                            service or be declined</p>
+                    </div>
+
+                    <button type="button" class="mt-1 btn btn-primary" data-dismiss="modal">Ok</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <!-- Script to trigger the modal on page load -->
+    <script>
+        $(document).ready(function () {
+            $('#reloadAlert').modal('show');
+        });
+    </script>
+
+</body>
+
+</html>
